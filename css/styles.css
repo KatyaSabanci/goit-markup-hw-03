@@ -16,6 +16,30 @@
   --logo-color: #4d5ae5;
   --span-footer-logo: #f4f4fd;
   --portfolio-button-focus-hover: #404bbf;
+  --portfolio-background-color: #e5e5e5;
+}
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ul {
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .header {
@@ -24,11 +48,23 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
 }
 .header-menu {
   color: var(--header-color);
 }
-
+.header-list {
+  display: inline-flex;
+  margin-right: auto;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -37,8 +73,13 @@
   letter-spacing: 0.03em;
   color: var(--logo-color);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo span {
   color: var(--header-color);
 }
@@ -65,8 +106,14 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
+.address-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
 .main-hero {
   background-color: var(--hero-background-color);
+  padding: 188px 472px;
 }
 
 .hero {
@@ -76,6 +123,10 @@ a:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
 }
 
 .button-hero {
@@ -88,6 +139,11 @@ a:focus {
   letter-spacing: 0.04em;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .button-hero:hover,
 :focus {
@@ -100,6 +156,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  padding-bottom: 18px;
 }
 .text {
   font-size: 16px;
@@ -107,9 +164,27 @@ a:focus {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.description {
+  padding-top: 120px;
+  display: flex;
+  padding-left: 156px;
+  padding-right: 156px;
+  gap: 24px;
+  padding-bottom: 120px;
+  width: calc((100%- 72px) / 4);
+  margin: 0;
+}
+
+.we-do-list {
+  padding-top: 72px;
+  display: inline-flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
 
 .team-section {
   background-color: #f4f4fd;
+  display: flex;
 }
 
 .second-title {
@@ -121,10 +196,30 @@ a:focus {
   text-align: center;
   color: var(--header-color);
 }
+.subtitle-add {
+  padding: 32px 65px 8px 65px;
+  text-align: center;
+}
+
+.text-add {
+  padding: 8px 68px 32px 68px;
+  text-align: center;
+}
 .team-line {
   background-color: var(--main-background-color);
 }
 
+.st-add {
+  padding-top: 120px;
+}
+.team-container {
+  padding-bottom: 120px;
+}
+.team-list {
+  padding-top: 72px;
+  display: flex;
+  gap: 24px;
+}
 .footer {
   background-color: var(--footer-background-color);
 }
@@ -137,6 +232,7 @@ a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  padding-top: 100px;
 }
 
 .footer-logo span {
@@ -148,6 +244,8 @@ a:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
+  width: 264px;
+  padding-bottom: 100px;
 }
 .portfolio-btn {
   font-family: 'Roboto', sans-serif;
@@ -175,4 +273,49 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--header-color);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.footer-container {
+  padding-top: 120px;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.button-container {
+  padding-top: 96px;
+}
+
+.group-container {
+  padding-left: 0;
+  margin: 0;
+  padding-top: 72px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 24 * 2) / 9);
+}
+
+.photo-border {
+  border: 1px solid #e7e9fc;
 }
