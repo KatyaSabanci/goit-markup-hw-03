@@ -95,7 +95,8 @@ ul {
   gap: 40px;
   margin-right: 0;
   max-width: 1158px;
-  padding: 24px 0;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .logo span {
   color: var(--header-color);
