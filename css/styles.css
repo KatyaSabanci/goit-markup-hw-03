@@ -180,14 +180,17 @@ a:focus {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-left: 0;
 }
+
 .description-menu {
-  padding: 120px 0 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .description-features {
-  padding-left: 0;
   width: calc((100% - 72px) / 4);
+  padding-left: 0;
 }
 
 .photo-section {
